@@ -3,23 +3,20 @@ package com.example.mediguide;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
-public class buscar extends AppCompatActivity {
+public class Tienda extends AppCompatActivity {
     //Inicializar variable
     DrawerLayout drawerLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_buscar);
+        setContentView(R.layout.activity_tienda);
 
         //Asignar variable
         drawerLayout = findViewById(R.id.drawer_layout);
-
     }
 
     public void ClickMenu(View view){
@@ -38,13 +35,14 @@ public class buscar extends AppCompatActivity {
     }
 
     public void ClickDashboard(View view){
-        //Rehacer activity
-        recreate();
+        //Redireccionar activity a dashboard
+        NavigationDrawer.redirectActivity(this,buscar.class);
     }
 
     public void ClickAboutUs(View view){
-        //Redireccionar activity a about us
-        NavigationDrawer.redirectActivity(this,Tienda.class);
+        //Rehacer activity
+        recreate();
+
     }
 
     public void ClickLogout(View view){

@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".recordatorios"></activity>
+        <activity android:name=".Tienda"></activity>
+        <activity android:name=".NavigationDrawer" />
+        <activity android:name=".recordatorios" />
         <activity android:name=".buscar" />
         <activity android:name=".inicio" />
         <activity android:name=".MainActivity">

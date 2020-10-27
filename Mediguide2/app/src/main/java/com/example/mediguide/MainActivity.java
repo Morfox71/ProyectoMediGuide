@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         this.ingresarB = (Button) findViewById(R.id.btn_siguiente);
         this.ingresarB.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                MainActivity.this.startActivity(new Intent(MainActivity.this, inicio.class));
+                MainActivity.this.startActivity(new Intent(MainActivity.this, NavigationDrawer.class));
             }
         });
 
