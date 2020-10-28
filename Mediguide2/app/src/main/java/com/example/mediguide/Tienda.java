@@ -34,15 +34,30 @@ public class Tienda extends AppCompatActivity {
         NavigationDrawer.redirectActivity(this,NavigationDrawer.class);
     }
 
-    public void ClickDashboard(View view){
-        //Redireccionar activity a dashboard
+    public void ClickBusqueda(View view){
+        //Redireccionar activity a Busqueda
         NavigationDrawer.redirectActivity(this,buscar.class);
     }
 
-    public void ClickAboutUs(View view){
+    public void ClickTienda(View view){
         //Rehacer activity
         recreate();
 
+    }
+
+    public void ClickPadecimientos(View view){
+        //Redireccionar activity a Padecimientos
+        NavigationDrawer.redirectActivity(this, Padecimientos.class);
+    }
+
+    public void ClickChat(View view){
+        //Redireccionar activity a Chat
+        NavigationDrawer.redirectActivity(this, Chat.class);
+    }
+
+    public void ClickRecordatorios(View view){
+        //Redireccionar activity a Recordatorios
+        NavigationDrawer.redirectActivity(this, recordatorios.class);
     }
 
     public void ClickLogout(View view){

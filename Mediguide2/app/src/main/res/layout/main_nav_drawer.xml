@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="MediGuide"
-        android:textSize="20sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         android:textAlignment="center"
         android:textColor="#636363"/>
@@ -35,19 +35,20 @@
         android:gravity="center_vertical"
         android:onClick="ClickHome">
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="85dp"
+            android:src="@drawable/ic_home"/>
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Home"
+            android:textSize="20sp"
             android:padding="12dp"
-            android:layout_marginStart="16dp"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="48dp"
-            android:src="@drawable/ic_home"/>
+            android:layout_marginEnd="16dp"/>
 
 
     </LinearLayout>
@@ -57,22 +58,26 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:onClick="ClickDashboard">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Dashboard"
-            android:padding="12dp"
-            android:layout_marginStart="16dp"/>
+        android:onClick="ClickBusqueda">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="48dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="85dp"
             android:src="@drawable/ic_search"/>
 
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Búsqueda"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:padding="12dp"
+            android:layout_marginEnd="16dp"/>
+
+
     </LinearLayout>
 
 
@@ -81,23 +86,103 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:onClick="ClickAboutUs">
+        android:onClick="ClickTienda">
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_shop"/>
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="About Us"
+            android:text="Tienda"
+            android:textSize="20sp"
             android:padding="12dp"
-            android:layout_marginStart="16dp"/>
-        
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:onClick="ClickPadecimientos">
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="48dp"
-            android:src="@drawable/ic_shop"/>
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="85dp"
+            android:src="@drawable/ic_triste"/>
 
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Padecimientos"
+            android:textSize="20sp"
+            android:padding="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:onClick="ClickChat">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="85dp"
+            android:src="@drawable/ic_chat"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Chat"
+            android:textSize="20sp"
+            android:padding="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:onClick="ClickRecordatorios">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="85dp"
+            android:src="@drawable/ic_recordatorios"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Recordatorios"
+            android:textSize="20sp"
+            android:padding="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"/>
 
     </LinearLayout>
 
@@ -108,24 +193,24 @@
         android:gravity="center_vertical"
         android:onClick="ClickLogout">
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="85dp"
+            android:src="@drawable/ic_logout"/>
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Logout"
+            android:textSize="20sp"
             android:padding="12dp"
-            android:layout_marginStart="16dp"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="48dp"
-            android:src="@drawable/ic_logout"/>
-
-
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"/>
 
     </LinearLayout>
 
-    
-    
+
 </LinearLayout>

@@ -3,31 +3,26 @@ package com.example.mediguide;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
-public class recordatorios extends AppCompatActivity {
-
-
-    //Inicializar variable
+public class Chat extends AppCompatActivity {
+    //Declarar variables
     DrawerLayout drawerLayout;
 
-    Button regresar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recordatorios);
+        setContentView(R.layout.activity_chat);
 
         //Asignar variable
-       drawerLayout = findViewById(R.id.drawer_layout);
-
+        drawerLayout = findViewById(R.id.drawer_layout);
     }
 
     public void ClickMenu(View view){
         //Abrir drawer
         NavigationDrawer.openDrawer(drawerLayout);
+
     }
 
     public void ClickLogo(View view){
@@ -36,8 +31,9 @@ public class recordatorios extends AppCompatActivity {
     }
 
     public void ClickHome(View view){
-        //Redireccionar activity a home
+        //Redireccionar activity a Home
         NavigationDrawer.redirectActivity(this, NavigationDrawer.class);
+
     }
 
     public void ClickBusqueda(View view){
@@ -56,13 +52,13 @@ public class recordatorios extends AppCompatActivity {
     }
 
     public void ClickChat(View view){
-        //Redireccionar activity a Chat
-        NavigationDrawer.redirectActivity(this, Chat.class);
+        //Rehacer activity
+        recreate();
     }
 
     public void ClickRecordatorios(View view){
-        //Rehacer activity
-        recreate();
+        //Redireccionar activity a Recordatorios
+        NavigationDrawer.redirectActivity(this, recordatorios.class);
     }
 
     public void ClickLogout(View view){

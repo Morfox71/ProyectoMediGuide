@@ -56,14 +56,29 @@ public class NavigationDrawer extends AppCompatActivity {
         recreate();
     }
 
-    public void ClickDashboard(View view){
-        //Redireccionar la actividad a dashboard
+    public void ClickBusqueda(View view){
+        //Redireccionar actividad a Busqueda
         redirectActivity(this,buscar.class);
     }
 
-    public void ClickAboutUs(View view){
-        //Redireccionar actividad a About Us
+    public void ClickTienda(View view){
+        //Redireccionar actividad a Tienda
         redirectActivity(this, Tienda.class);
+    }
+
+    public void ClickPadecimientos(View view){
+        //Redireccionar actividad a Padecimientos
+        redirectActivity(this, Padecimientos.class);
+    }
+
+    public void ClickChat(View view){
+        //Redireccionar actividad a Chat
+        redirectActivity(this, Chat.class);
+    }
+
+    public void ClickRecordatorios(View view){
+        //Redireccionar actividad a recordatorios
+        redirectActivity(this, recordatorios.class);
     }
 
     public void ClickLogout(View view){

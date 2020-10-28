@@ -3,26 +3,21 @@ package com.example.mediguide;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
-public class recordatorios extends AppCompatActivity {
-
+public class Padecimientos extends AppCompatActivity {
 
     //Inicializar variable
     DrawerLayout drawerLayout;
 
-    Button regresar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recordatorios);
+        setContentView(R.layout.activity_padecimientos);
 
-        //Asignar variable
-       drawerLayout = findViewById(R.id.drawer_layout);
-
+        //asignar variable
+        drawerLayout = findViewById(R.id.drawer_layout);
     }
 
     public void ClickMenu(View view){
@@ -36,7 +31,7 @@ public class recordatorios extends AppCompatActivity {
     }
 
     public void ClickHome(View view){
-        //Redireccionar activity a home
+        //Redireccionar activity a Home
         NavigationDrawer.redirectActivity(this, NavigationDrawer.class);
     }
 
@@ -51,8 +46,8 @@ public class recordatorios extends AppCompatActivity {
     }
 
     public void ClickPadecimientos(View view){
-        //Redireccionar activity a Padecimientos
-        NavigationDrawer.redirectActivity(this, Padecimientos.class);
+        //Rehacer activity
+        recreate();
     }
 
     public void ClickChat(View view){
@@ -61,13 +56,13 @@ public class recordatorios extends AppCompatActivity {
     }
 
     public void ClickRecordatorios(View view){
-        //Rehacer activity
-        recreate();
+        //Redireccionar activity a Recordatorios
+        NavigationDrawer.redirectActivity(this, recordatorios.class);
     }
 
     public void ClickLogout(View view){
-        //Cerrar app
-        NavigationDrawer.logout(this);
+        //Volver al inicio
+        NavigationDrawer.redirectActivity(this, MainActivity.class);
     }
 
     @Override

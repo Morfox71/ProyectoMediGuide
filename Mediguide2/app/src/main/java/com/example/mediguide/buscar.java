@@ -37,14 +37,29 @@ public class buscar extends AppCompatActivity {
         NavigationDrawer.redirectActivity(this,NavigationDrawer.class);
     }
 
-    public void ClickDashboard(View view){
+    public void ClickBusqueda(View view){
         //Rehacer activity
         recreate();
     }
 
-    public void ClickAboutUs(View view){
-        //Redireccionar activity a about us
+    public void ClickTienda(View view){
+        //Redireccionar activity a Tienda
         NavigationDrawer.redirectActivity(this,Tienda.class);
+    }
+
+    public void ClickPadecimientos(View view){
+        //Redireccionar activity a Padecimientos
+        NavigationDrawer.redirectActivity(this, Padecimientos.class);
+    }
+
+    public void ClickChat(View view){
+        //Redireccionar activity a Chat
+        NavigationDrawer.redirectActivity(this, Chat.class);
+    }
+
+    public void ClickRecordatorios(View view){
+        //Redireccionar activity a Recordatorios
+        NavigationDrawer.redirectActivity(this, recordatorios.class);
     }
 
     public void ClickLogout(View view){
