@@ -4,16 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/imagenasdas"
     tools:context=".registro">
 
     <EditText
         android:id="@+id/editTextTextPersonName3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
         android:layout_marginEnd="2dp"
-        android:layout_marginBottom="59dp"
+        android:layout_marginBottom="60dp"
+        android:hint="Usuario"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="#ffffff"
+        android:background="@drawable/bordes_redondos_textview"
         android:ems="10"
         android:inputType="textPersonName"
+        android:padding="6dp"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword2"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword2" />
 
@@ -25,6 +31,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="222dp"
         android:text="¿Usted es medico?"
+        android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/radioButton2"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -36,6 +43,8 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="10dp"
         android:text="Si"
+
+        android:textColor="@android:color/background_light"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
         app:layout_constraintEnd_toStartOf="@+id/radioButton3"
         app:layout_constraintStart_toEndOf="@+id/textView2" />
@@ -45,39 +54,67 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="No"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintBaseline_toBaselineOf="@+id/radioButton2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/radioButton2" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="45dp"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="40dp"
+        android:hint="Correo"
+        android:textColorHint="#ffffff"
+        android:background="@drawable/bordes_redondos_textview"
         android:ems="10"
         android:inputType="textEmailAddress"
+        android:padding="6dp"
+        android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toTopOf="@+id/radioButton3"
         app:layout_constraintEnd_toEndOf="@+id/radioButton3" />
 
     <EditText
         android:id="@+id/editTextTextPassword2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="66dp"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/bordes_redondos_textview"
         android:ems="10"
+        android:hint="Contraseña"
+        android:textColorHint="#ffffff"
         android:inputType="textPassword"
+        android:padding="6dp"
+        android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
         app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="57dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/bordes_registro"
         android:text="Registrarse"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="270dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="466dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mediguide_inicio" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

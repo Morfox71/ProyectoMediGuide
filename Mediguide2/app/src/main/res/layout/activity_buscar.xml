@@ -26,18 +26,21 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="¿En qué puedo ayudarte?"
+            android:text="Utilidad del medicamento"
+            android:textColor="@android:color/background_light"
             android:layout_marginTop="250sp"
             android:gravity="center"/>
 
         <EditText
             android:id="@+id/editTextTextPersonName2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="220dp"
+            android:layout_height="45dp"
             android:layout_marginLeft="100dp"
             android:layout_marginTop="15dp"
             android:ems="10"
-            android:gravity="center"
+            android:hint="buscar..."
+            android:background="@drawable/fondoblanco_textview"
+            android:padding="6dp"
             android:inputType="textPersonName" />
 
 
