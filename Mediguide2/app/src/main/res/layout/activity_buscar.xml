@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawer_layout"
+    android:background="@drawable/degradado_2"
     tools:context=".buscar">
 
     <LinearLayout
@@ -12,8 +13,14 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <include
-            layout="@layout/main_toolbar"/>
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ClickMenu"
+            android:src="@drawable/ic_menu_blanco"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toTopOf="@+id/view" />
 
         <TextView
             android:id="@+id/textView"
@@ -30,8 +37,8 @@
             android:layout_marginLeft="100dp"
             android:layout_marginTop="15dp"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:inputType="textPersonName" />
 
 
     </LinearLayout>

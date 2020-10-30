@@ -5,23 +5,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawer_layout"
-    tools:context=".Padecimientos">
+    android:background="@drawable/degradado_4"
+    tools:context=".buscar">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <include
-            layout="@layout/main_toolbar"/>
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ClickMenu"
+            android:src="@drawable/ic_menu_blanco"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toTopOf="@+id/view" />
 
         <TextView
+            android:id="@+id/textView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Padecimientos"
-            android:textSize="50sp"
-            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="¿Tiene algún malestar?"
+            android:layout_marginTop="250sp"
             android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName" />
+
 
     </LinearLayout>
 
@@ -35,6 +53,5 @@
             layout="@layout/main_nav_drawer"/>
 
     </RelativeLayout>
-
 
 </androidx.drawerlayout.widget.DrawerLayout>

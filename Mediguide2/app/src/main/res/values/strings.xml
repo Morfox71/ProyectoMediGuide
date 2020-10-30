@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Mediguide</string>
+
+    <string name="Terminos">Al aceptar el siguiente acuerdo se compromete al usuario a usar la aplicación "MediGuide" bajo su propia responsabilidad, la misma absolviéndose de cualquier problematica que pudiera surgir, recuerde que solo es para personas mayores de edad y solo se atenderán padecimientos no graves o mortales.</string>
+
+
 </resources>
