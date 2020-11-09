@@ -90,11 +90,11 @@ public class NavigationDrawer extends AppCompatActivity {
         //Inicializar diálogo de alerta
         AlertDialog.Builder builder = new AlertDialog.Builder(activity);
         //Estabelcer título
-        builder.setTitle("Logout");
+        builder.setTitle("Salir");
         //Establecer mensaje
-        builder.setMessage("Are you sure you want to log out?");
+        builder.setMessage("¿Seguro que quieres salir?");
         //Botón de afirmación
-        builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton("SI", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 //Finalizar actividad

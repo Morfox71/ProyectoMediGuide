@@ -37,11 +37,13 @@
             android:layout_height="45dp"
             android:layout_marginLeft="100dp"
             android:layout_marginTop="15dp"
+            android:background="@drawable/fondoblanco_textview"
+            android:drawableRight="@drawable/search_64px5"
+            android:drawableTint="#ff3e79"
             android:ems="10"
             android:hint="buscar..."
-            android:background="@drawable/fondoblanco_textview"
-            android:padding="6dp"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:padding="6dp" />
 
 
     </LinearLayout>
