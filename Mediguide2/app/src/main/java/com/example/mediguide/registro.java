@@ -26,7 +26,10 @@ public class registro extends AppCompatActivity {
         this.BtnRegistrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                db_mediGuide.agregarUsuarios(EditUsuario.getText().toString(), EditContra.getText().toString(), EditCorreo.getText().toString());
+                String Usuario = EditUsuario.getText().toString();
+                String Contra = EditContra.getText().toString();
+                String Correo = EditCorreo.getText().toString();
+                db_mediGuide.agregarUsuarios(Usuario, Contra, Correo);
                 Toast.makeText(getApplicationContext(), "Usuario Registrado", Toast.LENGTH_SHORT).show();
             }
         });
