@@ -3,6 +3,7 @@ package com.example.mediguide;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 int accion;
                 String usuario1, contra1;
                 contra1 = contra.getText().toString();
-                usuario1 = usuario.getText().toString();
+                usuario1 = usuario.getText().toString().toUpperCase();
 
                 accion = db_mediGuide.iniciarSesion(usuario1,contra1);
                 if (accion == 1){
