@@ -2,6 +2,8 @@
     <string name="app_name">Mediguide</string>
 
     <string name="Terminos">Al aceptar el siguiente acuerdo se compromete al usuario a usar la aplicación "MediGuide" bajo su propia responsabilidad, la misma absolviéndose de cualquier problematica que pudiera surgir, recuerde que solo es para personas mayores de edad y solo se atenderán padecimientos no graves o mortales.</string>
-
-
+    <string name="Busqueda">Facilitamos la búsqueda de medicamento. su contenido y posibles usos.</string>
+    <string name="Alarma">La aplicación emite agregar alarmas para llevar un control para la toma de medicamentos.</string>
+    <string name="Promociones">Facilitamos la búsqueda de medicamento,  su contenido y posibles usos.</string>
+    <string name="Chatea">Esta herramienta permite chatear con tus doctores que estén registrados</string>
 </resources>

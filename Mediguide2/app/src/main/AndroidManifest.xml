@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mediguide">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,8 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".Terminos_Condiciones"
-            android:theme="@style/AppTheme.TemaPopUp"></activity>
+        <activity android:name=".tutorial4"
+            android:theme="@style/AppTheme.TemaPopUp" />
+        <activity android:name=".tutorial3"
+            android:theme="@style/AppTheme.TemaPopUp" />
+        <activity android:name=".tutorial2"
+            android:theme="@style/AppTheme.TemaPopUp" />
+        <activity android:name=".Tutorial1"
+            android:theme="@style/AppTheme.TemaPopUp" />
+        <activity
+            android:name=".Terminos_Condiciones"
+            android:theme="@style/AppTheme.TemaPopUp" />
         <activity android:name=".registro" />
         <activity android:name=".Chat" />
         <activity android:name=".Padecimientos" />

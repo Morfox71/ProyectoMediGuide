@@ -15,7 +15,7 @@ public class NavigationDrawer extends AppCompatActivity {
     //Inicializar variables
 
     DrawerLayout drawerLayout;
-
+    inicio inicio = new inicio();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +25,8 @@ public class NavigationDrawer extends AppCompatActivity {
         drawerLayout = findViewById(R.id.drawer_layout);
 
     }
+
+
 
     public void ClickMenu(View view){
         //Abrir el drawer

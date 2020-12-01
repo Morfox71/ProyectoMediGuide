@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bordes_pantalla"
+    android:background="@drawable/redondo"
+    android:paddingLeft="60dp"
+    android:paddingRight="60dp"
     android:orientation="vertical"
     android:padding="20dp"
     tools:context=".Terminos_Condiciones"
@@ -37,11 +39,10 @@
         android:text="Si" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/siguiente"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_gravity="right"
-        android:background="@drawable/bordes_redondos"
         android:text="Siguiente" />
 
 
