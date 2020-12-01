@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+ HEAD
         <activity android:name=".tutorial4"
             android:theme="@style/AppTheme.TemaPopUp" />
         <activity android:name=".tutorial3"
@@ -19,6 +20,9 @@
             android:theme="@style/AppTheme.TemaPopUp" />
         <activity android:name=".Tutorial1"
             android:theme="@style/AppTheme.TemaPopUp" />
+
+        <activity android:name=".boton_flotante"></activity>
+ 729b8523a16484e6afe49a9476e03f9af35b4183
         <activity
             android:name=".Terminos_Condiciones"
             android:theme="@style/AppTheme.TemaPopUp" />
