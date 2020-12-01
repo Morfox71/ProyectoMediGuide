@@ -2,6 +2,7 @@ package com.example.mediguide;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -26,8 +27,20 @@ public class registro extends AppCompatActivity {
         this.BtnRegistrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                db_mediGuide.agregarUsuarios(EditUsuario.getText().toString(), EditContra.getText().toString(), EditCorreo.getText().toString());
-                Toast.makeText(getApplicationContext(), "Usuario Registrado", Toast.LENGTH_SHORT).show();
+                int accion;
+                String Usuario = EditUsuario.getText().toString().toUpperCase();
+                String Contra = EditContra.getText().toString();
+                String Correo = EditCorreo.getText().toString().toUpperCase();
+                accion = db_mediGuide.agregarUsuarios(Usuario, Contra, Correo);
+                if (accion == 0){
+                    Toast.makeText(getApplicationContext(), "Usuario existente", Toast.LENGTH_SHORT).show();
+                }else if (accion == 1){
+                    Toast.makeText(getApplicationContext(), "Correo existente", Toast.LENGTH_SHORT).show();
+                }else{
+                    Toast.makeText(getApplicationContext(), "Usuario Registrado", Toast.LENGTH_SHORT).show();
+                    registro.this.startActivity(new Intent(registro.this, MainActivity.class));
+                }
+
             }
         });
     }

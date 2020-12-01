@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/TextUsuario"
         android:layout_width="220dp"
         android:layout_height="45dp"
         android:layout_marginTop="271dp"
@@ -21,13 +21,13 @@
         android:padding="6dp"
         android:inputType="textPersonName"
         android:textColor="#ffffff"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+        app:layout_constraintBottom_toTopOf="@+id/TextContra"
+        app:layout_constraintEnd_toEndOf="@+id/TextContra"
+        app:layout_constraintStart_toStartOf="@+id/TextContra"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/TextContra"
         android:layout_width="220dp"
         android:layout_height="45dp"
         android:layout_marginBottom="276dp"
@@ -42,7 +42,7 @@
         app:layout_constraintBottom_toTopOf="@+id/registro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/TextUsuario" />
 
     <Button
         android:id="@+id/btn_siguiente"
@@ -54,9 +54,9 @@
         android:background="@drawable/bordes_redondos"
         android:text="INICIAR"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+        app:layout_constraintEnd_toEndOf="@+id/TextContra"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+        app:layout_constraintStart_toStartOf="@+id/TextContra"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <ImageView
@@ -93,6 +93,6 @@
         android:text="Registrarse"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/TextContra" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
