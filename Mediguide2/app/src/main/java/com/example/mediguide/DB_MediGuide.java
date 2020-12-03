@@ -19,7 +19,7 @@ public class DB_MediGuide extends SQLiteOpenHelper {
     private static final String TABLA_informacion = "CREATE TABLE if not exists INFORMACION (id_usuarios integer PRIMARY KEY, " +
             "edad text, estatura text, tipo_sangre text, padecimientos text, alergias text)";
     private static final String TABLA_productos = "CREATE TABLE if not exists PRODUCTOS (id_producto integer PRIMARY KEY autoincrement, " +
-            "precio text, descripcion text, nombre text, imagen_producto blob)";
+            "nombre text, precio text, descripcion text, lugar_venta text)";
 
 
     public DB_MediGuide(Context context){
@@ -34,6 +34,10 @@ public class DB_MediGuide extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL(TABLA_Usuarios);
         sqLiteDatabase.execSQL(TABLA_informacion);
         sqLiteDatabase.execSQL(TABLA_productos);
+
+        sqLiteDatabase.execSQL("INSERT INTO PRODUCTOS VALUES(1, 'Ibuprofeno','25','200Mg 10 capsulas', 'Farmacia Similares')");
+        sqLiteDatabase.execSQL("INSERT INTO PRODUCTOS VALUES(2, 'Paracetamol','120','500mg 20 tabletas', 'Farmacia San Pablo')");
+        sqLiteDatabase.execSQL("INSERT INTO PRODUCTOS VALUES(3, 'Ranitidina','100','150mg 20 tabletas', 'Farmacia Guadalajara')");
 
     }
 

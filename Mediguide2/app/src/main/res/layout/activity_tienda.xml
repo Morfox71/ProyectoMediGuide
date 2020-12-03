@@ -8,7 +8,7 @@
     android:background="@drawable/dregradado_3"
     tools:context=".buscar">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -22,21 +22,101 @@
             app:layout_constraintStart_toStartOf="@+id/view"
             app:layout_constraintTop_toTopOf="@+id/view" />
 
+
         <EditText
-            android:id="@+id/editTextTextPersonName2"
-            android:layout_width="220dp"
-            android:layout_height="45dp"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="15dp"
+            android:id="@+id/medicamento_tienda"
+            android:layout_width="233dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/fondoblanco_textview"
             android:drawableTint="#3eaafc"
-            android:drawableRight="@drawable/search_64px5"
             android:ems="10"
+            android:hint="Buscar medicamento"
             android:inputType="textPersonName"
             android:padding="6dp" />
 
+        <ImageButton
+            android:id="@+id/imgbtn_tienda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginRight="-61dp"
+            android:background="@null"
+            android:src="@drawable/ic_search" />
 
-    </LinearLayout>
+        <RelativeLayout
+            android:layout_width="368dp"
+            android:layout_height="321dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginBottom="363dp"
+            android:background="@drawable/bordes_redondos_layout"
+            android:elevation="5dp"
+            android:orientation="horizontal" >
+
+            <ViewFlipper
+                android:id="@+id/flipper_medicamentos"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="3dp"
+                android:layout_marginBottom="55dp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="344dp"
+                android:layout_weight="1"
+                android:text="Medicamentos"
+                android:gravity="center"
+                android:textSize="30dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="368dp"
+            android:layout_height="321dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/bordes_redondos_layout"
+            android:elevation="5dp"
+            android:orientation="horizontal">
+
+            <ViewFlipper
+                android:id="@+id/flipper_consejos"
+                android:layout_width="329dp"
+                android:layout_height="252dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="55dp"
+                android:layout_marginBottom="15dp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="344dp"
+                android:layout_weight="1"
+                android:text="Consejos Covid-19"
+                android:gravity="center"
+                android:textSize="30dp" />
+        </RelativeLayout>
+
+        />
+
+
+    </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="300dp"
